@@ -1,91 +1,115 @@
-# Hallucination-Evaluation-And-Multi-Agent-System
+# LLM-Based Generative AI Systems: Hallucination Reduction & Multi-Agent Reasoning
+
+**Course:** COMSE6998-015 – Introduction to LLM-Based Generative AI Systems  
+**Focus:** Hallucination mitigation, retrieval grounding, and multi-agent reasoning  
+**Execution Environment:** Google Colab (Preferred: A100 GPU)
+
+---
 
 ## Project Overview
-This project implements a **multi-agent medical question answering and clinical case analysis system**.  
-Instead of relying on a single generic language model, the system uses **role-aligned medical agents** to improve correctness, safety, and interpretability.
+This repository contains a collection of **LLM-based system implementations and experiments** focused on improving **factuality, safety, and reliability** in generative AI systems.
 
-The pipeline combines:
-- **Domain-specialist reasoning**
-- **Doctor-level synthesis**
-- **Nurse-level patient communication**
+The project explores **three complementary approaches** to hallucination reduction and reasoning quality:
 
-This design reduces hallucinations and improves reliability compared to standard single-LLM approaches.
+1. **Retrieval-Augmented Generation (RAG)**
+2. **Contrastive Decoding**
+3. **Multi-Agent Role-Aligned Reasoning**
 
----
-
-## Key Idea
-The system enforces two goals simultaneously:
-1. **Medical correctness** through specialist and doctor agents
-2. **Patient communication safety** through a nurse agent
-
-Standard LLMs often struggle to achieve both at the same time.  
-This architecture separates reasoning from explanation to solve that problem.
+Together, these components study how both **training-time assumptions** and **inference-time system design** affect LLM reliability.
 
 ---
 
-## Agent Roles and Responsibilities
 
-### Cardiology Agent
-- Provides cardiology-focused clinical reasoning
-- Identifies heart and circulation-related considerations
+---
+
+## 1. Retrieval-Augmented Generation (RAG) Experiments
+
+**Notebook:** `Hallucination_eval.ipynb`
+
+### Objective
+Evaluate how **retrieval-augmented generation** reduces hallucinations compared to generation without retrieval.
+
+---
+
+### Methodology
+- Relevant documents are retrieved based on semantic similarity
+- Retrieved passages are injected into the model prompt
+- Outputs are evaluated for:
+  - factual consistency
+  - hallucination frequency
+  - answer completeness
+
+---
+
+### Key Insight
+Grounding model responses in retrieved external context significantly reduces unsupported claims and improves factual reliability, especially for domain-specific queries.
+
+---
+
+## 2. Contrastive Decoding Experiments
+
+**Notebook:** `Hallucination_eval_Contrastive_Decoding.ipynb`
+
+### Objective
+Analyze how **contrastive decoding** can reduce hallucinations at inference time without modifying model weights.
+
+---
+
+### Methodology
+- Compare standard decoding against contrastive decoding
+- Penalize token trajectories likely to produce hallucinations
+- Evaluate factual accuracy across structured prompts
+
+---
+
+### Key Insight
+Contrastive decoding provides a **lightweight, inference-time hallucination mitigation strategy** that complements retrieval-based approaches.
+
+---
+
+## 3. Multi-Agent Medical QA & Case Analysis System
+
+**Notebook:** `multi_agent_documented.ipynb`
+
+### Motivation
+Single-model systems often struggle to balance:
+- expert-level medical reasoning
+- safe, patient-friendly communication
+
+This system addresses that limitation using **role-aligned multi-agent architecture**.
+
+---
+
+### Agent Roles
+
+#### Cardiology Agent
+- Performs cardiology-specific reasoning
 - Uses only retrieved cardiology documents
 - Avoids answering outside its domain
 
----
-
-### Dermatology Agent
-- Provides skin-related assessment and differential diagnosis insights
+#### Dermatology Agent
+- Performs skin-related analysis and differential reasoning
 - Uses dermatology-specific retrieved documents
-- Restricts answers to dermatology scope
+- Restricts output to dermatology scope
+
+#### Doctor Agent (Clinical Synthesizer)
+- Integrates outputs from specialist agents
+- Produces a coherent, medically grounded response
+- Resolves conflicts and summarizes findings
+
+#### Nurse Agent (Patient-Facing Interpreter)
+- Converts the doctor’s output into clear, non-technical language
+- Emphasizes safety and empathy
+- Does **not** introduce new diagnoses
 
 ---
 
-### Doctor Agent (Clinical Synthesizer)
-- Combines outputs from Cardiology and Dermatology agents
-- Produces a unified clinical reasoning result
-- Resolves conflicts and summarizes key findings
-- Does not introduce unsupported medical claims
-
----
-
-### Nurse Agent (Patient-Facing Interpreter)
-- Translates the doctor’s output into clear, non-technical language
-- Emphasizes empathy, clarity, and safety
-- Adds guidance on when to seek medical attention
-- **Does not generate new diagnoses or medical decisions**
-
----
-
-## System Pipeline
-
+### Multi-Agent Pipeline
 1. User submits a question or clinical case
-2. Input is routed to:
-   - Cardiology Agent
-   - Dermatology Agent
-3. Specialist outputs are passed to the Doctor Agent
-4. Doctor Agent produces a synthesized clinical response
-5. Nurse Agent rewrites the response into patient-friendly language
-6. Final answer is returned to the user
-
----
-
-## Retrieval and Context Grounding
-- Each specialist agent retrieves information from its own document corpus
-- Only retrieved content is used to generate responses
-- If relevant information is missing, the system responds with uncertainty instead of hallucinating
-
-This retrieval-based grounding significantly improves factual reliability.
-
----
-
-## Model and Prompting Strategy
-- Base model: Loaded via HuggingFace Transformers
-- Each agent uses a **role-specific system prompt** that enforces:
-  - domain constraints
-  - grounding to retrieved context
-  - safety and refusal behavior when information is insufficient
-- The Doctor prompt focuses on synthesis and consistency
-- The Nurse prompt forbids introducing new medical claims
+2. Input is routed to Cardiology and Dermatology agents
+3. Specialist outputs are synthesized by the Doctor agent
+4. Final response is rewritten by the Nurse agent
+5. Nurse-facing answer is returned to the user
 
 ---
 
@@ -94,19 +118,52 @@ This retrieval-based grounding significantly improves factual reliability.
 ### Run on Google Colab (Preferred: A100 GPU)
 This project is designed to run on **Google Colab**, preferably using an **A100 GPU** for best performance.
 
-1. Upload all project files (including `multi_agent_documented.ipynb` and the document folders) to your Colab environment.
-2. Open the notebook and set the runtime to **GPU (A100 if available)**.
-3. **Do not forget to add your Hugging Face access token** (required for model loading):
-   - Store it as an environment variable (`HF_TOKEN`) or
-   - Add it securely in the notebook using Colab secrets.
-4. Install the required dependencies in the first code cell.
-5. Execute all cells sequentially.
+1. Upload all repository files to your Colab environment.
+2. Set the runtime to **GPU (A100 if available)**.
+3. **Do not forget to add your Hugging Face access token**, required for loading models:
+   - Store it as an environment variable (`HF_TOKEN`), or
+   - Add it securely using Colab secrets.
+4. Run the notebooks or Python scripts sequentially.
+
+---
 
 ### User Interface (Gradio)
-In the **final code cell**, the system launches a **Gradio web interface**.
+For the multi-agent system:
 
-- A **Gradio link** will appear in the output after execution.
-- Click the link to interact with the multi-agent system through a browser-based UI.
-- The UI allows you to submit medical questions or clinical cases and view responses generated by the multi-agent pipeline.
+- In the **final code cell**, a **Gradio web interface** is launched.
+- A public **Gradio link** will appear in the output.
+- Click the link to interact with the system through a browser-based UI.
 
-No local setup is required when running through Google Colab.
+---
+
+## Evaluation Criteria
+Evaluation across all components focuses on:
+- hallucination reduction
+- grounding to external context
+- multi-step reasoning quality
+- safety and clarity of outputs
+
+---
+
+## Technologies Used
+
+- **Python** – Core implementation language  
+- **Google Colab** – GPU-based execution environment (A100 preferred)  
+- **HuggingFace Transformers & Hub** – Model loading, tokenization, and inference  
+- **Retrieval-Augmented Generation (RAG)** – Document-grounded generation  
+- **Contrastive Decoding** – Inference-time hallucination reduction  
+- **Multi-Agent Prompt Engineering** – Role-aligned specialist, doctor, and nurse agents  
+- **LangChain / LangGraph–style Orchestration** – Structured multi-step agent pipelines (conceptually inspired)  
+- **Gradio** – Web-based user interface  
+
+---
+
+## Limitations
+- Results depend on document quality and retrieval accuracy
+- Contrastive decoding requires careful tuning
+- Intended for **research and educational use only**
+
+---
+
+## Summary
+This repository demonstrates how **retrieval, decoding strategies, and multi-agent architectures** can work together to improve the reliability and safety of LLM-based generative AI systems.
