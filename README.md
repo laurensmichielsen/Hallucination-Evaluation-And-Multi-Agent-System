@@ -115,19 +115,6 @@ This system addresses that limitation using **role-aligned multi-agent architect
 
 ## How to Run
 
-### Run on Google Colab (Preferred: A100 GPU)
-This project is designed to run on **Google Colab**, preferably using an **A100 GPU** for best performance.
-
-1. Upload all repository files to your Colab environment.
-2. Set the runtime to **GPU (A100 if available)**.
-3. **Do not forget to add your Hugging Face access token**, required for loading models:
-   - Store it as an environment variable (`HF_TOKEN`), or
-   - Add it securely using Colab secrets.
-4. Run the notebooks or Python scripts sequentially.
-
-
-## Running the Gradio UI
-
 The multi-agent system includes a **Gradio-based web interface** for interactive use.
 
 1. Run the project on **Google Colab** with GPU enabled (A100 preferred).
