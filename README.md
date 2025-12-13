@@ -1,4 +1,4 @@
-# LLM-Based Generative AI Systems: Hallucination Reduction & Multi-Agent Reasoning
+# MedAnchor: Grounded Multi-Agent QA System for Healthcare Applications
 
 **Course:** COMSE6998-015 – Introduction to LLM-Based Generative AI Systems  
 **Focus:** Hallucination mitigation, retrieval grounding, and multi-agent reasoning  
