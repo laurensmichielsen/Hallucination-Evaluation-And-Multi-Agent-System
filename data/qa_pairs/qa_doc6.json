@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "When should exercise testing be performed in stable STEMI patients who are not selected for cardiac catheterization?",
+    "Which imaging modalities should be added to exercise testing when baseline ECG abnormalities limit interpretation?",
+    "What early physical activity recommendation is given for STEMI patients who are hemodynamically stable?",
+    "What dietary approach is recommended for STEMI patients after discharge?",
+    "When should patient counseling to improve adherence to post-STEMI treatment begin and how long should it continue?"
+  ],
+  "answers": [
+    "Exercise testing should be performed either in the hospital or early after discharge in STEMI patients without high-risk features to assess ischemia.",
+    "Echocardiography or myocardial perfusion imaging should be added when baseline ECG abnormalities compromise interpretation.",
+    "Patients should not remain on bed rest for more than 12-24 hours if they have no recurrent ischemia, heart failure, or serious arrhythmias.",
+    "The NCEP ATP III Therapeutic Lifestyle Changes diet with reduced saturated fat and cholesterol intake is recommended.",
+    "Counseling should begin early during hospitalization, be reinforced at discharge, and continue at follow-up and rehabilitation sessions."
+  ]
+}

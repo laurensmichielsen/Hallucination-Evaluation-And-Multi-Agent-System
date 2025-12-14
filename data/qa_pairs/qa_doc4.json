@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "What is the role of a stepwise approach in perioperative cardiac assessment?",
+    "How should cardiovascular screening and treatment be applied to patients undergoing noncardiac surgery?",
+    "When is stress testing appropriate in patients undergoing noncardiac surgery?",
+    "What are the perioperative considerations for new therapies in diabetes, heart failure, and obesity?",
+    "How should perioperative anticoagulation be managed, and what precautions apply to newly diagnosed AF after surgery?"
+  ],
+  "answers": [
+    "A stepwise approach helps clinicians decide whether surgery can safely proceed or if further cardiac evaluation is needed, guiding perioperative risk assessment and planning.",
+    "Cardiovascular screening and treatment should follow the same indications as nonsurgical patients, timed carefully to avoid delaying surgery, and chosen to prevent overscreening and overtreatment.",
+    "Stress testing should be used judiciously, especially in lower-risk patients, and only when the testing would be clinically appropriate independent of the planned surgery.",
+    "New therapies, such as SGLT2 inhibitors for diabetes, have important perioperative implications. SGLT2 inhibitors should be stopped 3 to 4 days before surgery to reduce the risk of perioperative ketoacidosis, and other therapies for heart failure and obesity may require careful management.",
+    "Perioperative bridging with oral anticoagulants should be limited to patients at highest thrombotic risk. Patients with newly diagnosed AF after surgery require close follow-up to address reversible causes, consider rhythm control, and evaluate the need for long-term anticoagulation."
+  ]
+}

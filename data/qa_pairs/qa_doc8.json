@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "How does chronic kidney disease influence cardiovascular disease risk?",
+    "What are the primary markers used to define chronic kidney disease?",
+    "What other nontraditional ASCVD risk factors contribute to increased cardiovascular risk in CKD patients?",
+    "Why should COPD patients be screened for ASCVD and ASCVD risk factors?",
+    "Which inflammatory disease has the strongest evidence for increasing cardiovascular disease risk and by how much?"
+  ],
+  "answers": [
+    "CKD significantly increases cardiovascular morbidity and mortality, with worsening risk as kidney function declines below an eGFR of about 60–75 mL/min/1.73m².",
+    "CKD is defined by abnormalities in kidney structure or function for more than 3 months, including markers such as albuminuria and an eGFR below 60 mL/min/1.73m².",
+    "Inflammation, oxidative stress, and promotors of vascular calcification are nontraditional ASCVD risk factors seen in CKD patients.",
+    "Because COPD is associated with increased cardiovascular disease risk and can interfere with diagnostic accuracy for cardiac testing, cardiovascular evaluation is important.",
+    "Rheumatoid arthritis has the strongest evidence, increasing cardiovascular disease risk by approximately 50% beyond established risk factors."
+  ]
+}

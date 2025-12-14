@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "What medication classes are included in guideline-directed medical therapy (GDMT) for HFrEF, and what role do SGLT2 inhibitors play?",
+    "How are heart failure therapies recommended for patients with mildly reduced (HFmrEF) or preserved ejection fraction (HFpEF)?",
+    "What is the recommendation for patients with improved LVEF who previously had HFrEF?",
+    "What are the new considerations for amyloid heart disease in the 2022 HF guidelines?",
+    "What is recommended for patients with advanced HF or at risk for HF (stages A and B)?"
+  ],
+  "answers": [
+    "GDMT for HFrEF includes four medication classes, one of which is sodium-glucose cotransporter-2 inhibitors (SGLT2i), which play an important role in improving outcomes.",
+    "For HFmrEF, SGLT2i have a Class 2a recommendation, while ARNi, ACEi, ARB, MRA, and beta blockers have weaker Class 2b recommendations. For HFpEF, SGLT2i have Class 2a, and MRAs and ARNi have Class 2b recommendations. Additional prior recommendations for hypertension, atrial fibrillation, ARBs, and avoidance of nitrates or PDE-5 inhibitors are also maintained.",
+    "Patients with improved LVEF (>40%) after previously having HFrEF should continue their HFrEF treatment to maintain benefit.",
+    "New recommendations for amyloid heart disease include screening for serum and urine monoclonal light chains, bone scintigraphy, genetic sequencing, tetramer stabilizer therapy, and anticoagulation where appropriate.",
+    "Patients with advanced HF who wish to prolong survival should be referred to a specialized HF team for management and potential advanced therapies, including palliative care if aligned with goals. Primary prevention is important for patients at risk (stage A) or pre-HF (stage B) to reduce progression, and recommendations are also provided for managing comorbidities such as iron deficiency, anemia, hypertension, sleep disorders, diabetes, AF, CAD, and malignancy."
+  ]
+}

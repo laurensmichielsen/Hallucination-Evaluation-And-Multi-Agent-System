@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "Why is shared decision-making important in the care of patients with HCM?",
+    "When should patients with HCM and their families be referred to specialized HCM centers?",
+    "What is the role of genetic testing and family screening in HCM?",
+    "How are sudden cardiac death (SCD) risks assessed in adults versus children with HCM?",
+    "What are the recommended treatment strategies for symptomatic obstructive HCM?"
+  ],
+  "answers": [
+    "Shared decision-making ensures the patient’s preferences, goals, and values are incorporated into care. It involves discussion of all testing and treatment options, their risks and benefits, and applicability to the individual patient to develop a personalized treatment plan.",
+    "Referral is recommended for challenging treatment decisions (e.g., weak guideline recommendations, nuanced genetic testing interpretation, primary prevention ICD decisions), HCM-specific invasive procedures, or for complex pediatric care. Specialized centers optimize outcomes and provide multidisciplinary expertise.",
+    "Careful family history assessment and counseling about genetic transmission are cornerstones of HCM care. Screening of first-degree relatives using genetic testing, imaging, or ECG surveillance can begin at any age. Pathogenicity of variants should be reconfirmed every 2–3 years, ideally with input from HCM genetics specialists.",
+    "Adults: risk is assessed using established risk markers and individualized risk calculators, facilitating shared decision-making for ICD placement. Children: risk factors differ in weight and composition, vary with age and body size, and device complications are higher; pediatric risk calculators help guide decisions, best handled at specialized HCM centers.",
+    "First-line therapy includes standard medications to reduce symptoms. Cardiac myosin inhibitors (e.g., mavacamten) are indicated if symptoms persist. For drug-refractory or severe obstruction, invasive septal reduction (surgical myectomy or alcohol septal ablation) performed at experienced HCM centers provides effective and safe symptomatic relief."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "What is the new proposed classification of atrial fibrillation, and why was it updated?",
+    "How does lifestyle and risk factor modification fit into AF management?",
+    "How should anticoagulation decisions be made in AF patients with intermediate stroke risk?",
+    "What is the recommendation for early rhythm control in AF?",
+    "What are the updated recommendations regarding catheter ablation and left atrial appendage occlusion in AF?"
+  ],
+  "answers": [
+    "The new classification uses stages of AF rather than just arrhythmia duration. It recognizes AF as a disease continuum that requires a variety of strategies, including prevention, lifestyle modification, screening, and therapy, rather than emphasizing only therapeutic interventions.",
+    "Lifestyle and risk factor modification are considered a pillar of AF management. Managing obesity, weight loss, physical activity, smoking cessation, alcohol moderation, hypertension, and other comorbidities can help prevent AF onset, slow progression, and reduce adverse outcomes.",
+    "Anticoagulation is guided by annual thromboembolic risk, typically using validated scores like CHA2DS2-VASc. For patients at intermediate risk where benefit is uncertain, other risk variables or alternative risk scores can be considered to improve prediction and guide shared decision-making.",
+    "Early and continued rhythm control is recommended to maintain sinus rhythm and minimize AF burden. Evidence shows that initiating rhythm management early improves outcomes compared with delayed therapy.",
+    "Catheter ablation now has a Class 1 indication as first-line therapy in selected patients, including those with heart failure with reduced ejection fraction, due to evidence of superiority over drug therapy. Left atrial appendage occlusion devices have an upgraded Class 2a recommendation for patients with long-term contraindications to anticoagulation."
+  ]
+}

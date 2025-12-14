@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "What is recommended regarding awareness and surveillance of peri-operative cardiovascular complications in patients undergoing intermediate- or high-risk non-cardiac surgery?",
+    "What is the recommended initial management approach for post-operative STEMI and NSTE-ACS?",
+    "How should patients with post-operative heart failure be managed according to established guideline principles?",
+    "In patients with post-operative atrial fibrillation after non-cardiac surgery, when should long-term oral anticoagulation be considered?",
+    "How should high- or intermediate-probability post-operative pulmonary embolism be managed while diagnostic work-up is ongoing?"
+  ],
+  "answers": [
+    "Healthcare providers are advised to maintain high awareness of peri-operative cardiovascular complications and conduct surveillance for myocardial injury in intermediate- or high-risk non-cardiac surgery patients.",
+    "Post-operative STEMI and NSTE-ACS should be treated in accordance with standard ACS guidelines after multidisciplinary assessment of bleeding risk.",
+    "Post-operative acute heart failure should be managed following the same guidelines as in non-surgical patients, including optimization of hemodynamics and guideline-directed therapy.",
+    "Long-term oral anticoagulation should be considered for patients with post-operative atrial fibrillation who are at risk of stroke and have an anticipated net clinical benefit.",
+    "Anticoagulation should be initiated without delay if the bleeding risk is low, even while diagnostic evaluation continues, and therapy should continue for at least three months."
+  ]
+}

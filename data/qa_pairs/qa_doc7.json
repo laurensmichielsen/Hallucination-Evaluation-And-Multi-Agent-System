@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "What is the overarching blood pressure treatment goal for all adults according to the 2025 hypertension guideline?",
+    "Which dietary lifestyle modification is emphasized as the most important for reducing high blood pressure?",
+    "What first-line pharmacologic therapy is recommended for stage 1 hypertension when medication is indicated?",
+    "Which condition requires preferred antihypertensive agents due to fetal safety considerations?",
+    "What approach should be used when managing adults with resistant hypertension according to guideline recommendations?"
+  ],
+  "answers": [
+    "The overarching blood pressure treatment goal is less than 130/80 mm Hg for all adults.",
+    "Lowering dietary sodium intake is emphasized as the primary and most impactful dietary modification.",
+    "First-line therapy includes thiazide diuretics, ACE inhibitors, ARBs, or calcium channel blockers.",
+    "Treatment of hypertension in pregnancy requires use of preferred agents such as labetalol or nifedipine due to fetal safety.",
+    "Management of resistant hypertension requires careful evaluation for secondary causes and involvement of a multidisciplinary team when renal denervation is considered."
+  ]
+}

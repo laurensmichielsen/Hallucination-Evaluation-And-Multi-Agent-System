@@ -1,0 +1,16 @@
+{
+    "questions": [
+        "Which antiplatelet drugs are recommended for ACS patients undergoing PCI?",
+        "How long is dual antiplatelet therapy indicated for ACS patients not at high bleeding risk?",
+        "What is the recommended lipid-lowering therapy for ACS patients on maximally tolerated statins?",
+        "Which invasive strategy is recommended for non-ST-segment elevation ACS patients at intermediate or high ischemic risk?",
+        "Which procedural approaches are recommended for ACS patients undergoing PCI to reduce complications?"
+    ],
+    "answers": [
+        "Ticagrelor or prasugrel are recommended, preferred over clopidogrel for ACS patients undergoing PCI.",
+        "At least 12 months, with strategies such as proton pump inhibitors, ticagrelor monotherapy after 1 month, or aspirin discontinuation in patients on long-term anticoagulation to reduce bleeding risk.",
+        "High-intensity statin therapy is recommended for all ACS patients. For those already on maximally tolerated statins: add a non-statin agent (e.g., ezetimibe, evolocumab, alirocumab, or inclisiran) if LDL cholesterol is ≥70 mg/dL (1.8 mmol/L). Further intensification is reasonable in high-risk patients if LDL is 55 to <70 mg/dL (1.4 to <1.8 mmol/L).",
+        "An invasive approach with intent to proceed with revascularization during hospitalization is recommended.",
+        "Radial access is preferred over femoral to reduce bleeding and vascular complications, and intracoronary imaging is recommended to guide PCI in complex lesions."
+    ]
+}   

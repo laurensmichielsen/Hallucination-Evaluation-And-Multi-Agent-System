@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "According to ACC/AHA guidelines, what is used to estimate the 10-year risk of an ASCVD event in asymptomatic individuals?",
+    "Which modifiable behaviors are major contributors to cardiovascular disease worldwide?",
+    "How does accurate risk stratification help in cardiovascular disease prevention for high-risk individuals?",
+    "What types of patient characteristics are included in the ASCVD scoring tool to estimate risk?",
+    "What is the projected worldwide annual cardiovascular disease mortality by the year 2030?"
+  ],
+  "answers": [
+    "An ASCVD risk scoring tool is recommended to estimate the 10-year and lifetime risk of ASCVD events.",
+    "Tobacco use, physical inactivity, poor dietary choices, and obesity are major modifiable contributors to CVD.",
+    "It allows appropriate treatment to prevent complications related to cardiovascular disease.",
+    "Sex, race, cholesterol levels, smoking status, blood pressure, and aspects of medical history.",
+    "Over 23 million deaths per year."
+  ]
+}
