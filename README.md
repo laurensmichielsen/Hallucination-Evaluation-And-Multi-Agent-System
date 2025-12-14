@@ -21,6 +21,10 @@ Together, these components study how both **training-time assumptions** and **in
 
 
 ---
+## Data
+Download the documents that are given in the final report. Make sure to edit the documents to not include the take home messages. For the cardiology documents, also download the documents given in the final report.
+Make sure to include the following structure in the data folder. 
+Make a subfolder called files. In that folder make another folder called dermatology and no_take_home. In the no_take_home put the documents of the cardiology set without the take-home messages and in the dermatology folder the dermatology documents. 
 
 ## 1. Retrieval-Augmented Generation (RAG) Experiments
 
